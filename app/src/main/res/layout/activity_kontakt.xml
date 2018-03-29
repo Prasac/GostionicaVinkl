@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/kontaktback"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="tomislav.piskur.com.vinkl.Kontakt">
+
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        tools:context="tomislav.piskur.com.vinkl.Kontakt" />
+
+
+    <TextView
+        android:id="@+id/tvRazmak"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.125"
+        android:text="@string/kontakt"
+        android:textSize="30sp"
+        android:fontFamily="@font/font_marelene_pro_italic"
+        android:paddingLeft="25dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:paddingTop="25dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"/>
+
+    <Button
+
+        android:id="@+id/btnFiksni"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:drawableLeft="@drawable/ic_local_phone_black_24dp"
+        android:drawableStart="@drawable/ic_local_phone_black_24dp"
+        android:drawablePadding="60dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="35dp"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:text="@string/_01_8895094_n_telefon"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <Button
+        android:id="@+id/btnMobitel"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:drawableStart="@drawable/ic_phone_iphone_black_24dp"
+        android:drawableLeft="@drawable/ic_phone_iphone_black_24dp"
+        android:drawablePadding="60dp"
+        android:gravity="start|center_vertical"
+        android:paddingStart="35dp"
+        android:paddingLeft="35dp"
+        android:paddingEnd="35dp"
+        android:text="@string/_099_2323243_n_mobitel"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_gravity="end"
+        />
+    <Button
+        android:id="@+id/btnEmail"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawablePadding="60dp"
+        android:gravity="start|center_vertical"
+        android:paddingLeft="35dp"
+        android:paddingStart="35dp"
+        android:paddingRight="35dp"
+        android:text="@string/gostionica_vinkl_gmail_com_n_email"
+        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+        <Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="@drawable/home_button"
+            android:id="@+id/btnHome"
+            android:textColor="@drawable/button" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+

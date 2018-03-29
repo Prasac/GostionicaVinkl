@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/mainactivitybackground"
+    tools:context="tomislav.piskur.com.vinkl.MainActivity">
+
+
+        <TextView
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:id="@+id/tvPrazan"
+         android:layout_weight="0.2"/>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:weightSum="1">
+
+             <TextView
+                 android:layout_width="0dp"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.04"/>
+
+           <Button
+
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="@string/tjedna_ponuda"
+               android:id="@+id/btnTjednaPonuda"
+               android:layout_weight="0.37"
+               android:singleLine="true"
+               android:textAllCaps="false"
+               android:textColor="@drawable/button"
+               android:background="@null"
+               android:textSize="22sp"
+               android:fontFamily="@font/font_marelene_pro_italic" />
+
+           <Button
+
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:text="@string/la_carte"
+               android:id="@+id/btnAlaCarte"
+               android:singleLine="true"
+               android:layout_weight="0.30"
+               android:textAllCaps="false"
+               android:textColor="@drawable/button"
+               android:background="@null"
+               android:textSize="22sp"
+               android:fontFamily="@font/font_marelene_pro_italic" />
+
+           <Button
+
+               android:id="@+id/btnKontakt"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.25"
+               android:singleLine="true"
+               android:background="@null"
+               android:fontFamily="@font/font_marelene_pro_italic"
+               android:text="@string/kontakt"
+               android:textAllCaps="false"
+               android:textColor="@drawable/button"
+               android:textSize="22sp" />
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="0.04"/>
+
+       </LinearLayout>
+
+ </LinearLayout>
+
+
+
+

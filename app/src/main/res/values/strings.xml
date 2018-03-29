@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Gostionica Vinkl</string>
+    <string name="la_carte">A la carte</string>
+    <string name="kontakt">Kontakt</string>
+    <string name="tjedna_ponuda">Tjedni meni</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_kontakt">Map</string>
+
+    <string name="_01_8895094_n_telefon">(01) 8895094   telefon</string>
+    <string name="_099_2323243_n_mobitel">(099) 2323243   mobitel</string>
+    <string name="gostionica_vinkl_gmail_com_n_email">gostionica.vinkl@gmail.com   email</string>
+
+    <string name="dan">Dan</string>
+    <string name="heading">Heading</string>
+    <string name="description">Description</string>
+    <string name="Adresa">Gostionica Vinkl, Ivana Cankara 19, Zagreb</string>
+    <string name="odabirEmailAplikacije">Odaberite Email aplikaciju</string>
+</resources>

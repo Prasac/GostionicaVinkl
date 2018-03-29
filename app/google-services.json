@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "319719680978",
+    "firebase_url": "https://vinkl-4a871.firebaseio.com",
+    "project_id": "vinkl-4a871",
+    "storage_bucket": "vinkl-4a871.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:319719680978:android:6262d00b1f2b4e08",
+        "android_client_info": {
+          "package_name": "tomislav.piskur.com.vinkl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "319719680978-rk0o95od06u1712a2uh5ihkp2mom8v27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQlKmUEHXXBPijiwdDBpUZv-ikCIMWX4E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="tomislav.piskur.com.vinkl.DnevniMenuFragment">
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:id="@+id/tvDnevniMenu"
+        android:gravity="center"
+        android:fontFamily="@font/font_marelene_pro_italic"
+        android:textSize="35sp"
+        android:textColor="#c0b283" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.79">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.08"
+            android:orientation="vertical"
+            android:gravity="center|bottom">
+
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:background="@drawable/home_button"
+                android:id="@+id/btnHome"
+                android:textColor="@drawable/button" />
+
+        </LinearLayout></LinearLayout>
+
+
+
+
+</RelativeLayout>
