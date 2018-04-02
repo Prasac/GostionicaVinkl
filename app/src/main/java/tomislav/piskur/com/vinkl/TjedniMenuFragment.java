@@ -3,6 +3,7 @@ package tomislav.piskur.com.vinkl;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -47,14 +48,14 @@ public class TjedniMenuFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         return inflater.inflate(R.layout.fragment_tjedni_menu, container, false);
     }
 
     @Override
-    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
 
@@ -97,32 +98,11 @@ public class TjedniMenuFragment extends Fragment {
                     Menu item;
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject o = array.getJSONObject(i);
-                        if (i < 4) {
-                            item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), "Ponedjeljak");
-                            listItems.add(item);
-
-                        } else if (i < 8) {
 
                             item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), "Utorak");
+                                    o.getString("Cijena"), o.getString("Dan"));
                             listItems.add(item);
 
-                        } else if (i < 12) {
-                            item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), "Srijeda");
-                            listItems.add(item);
-
-                        } else if (i < 16) {
-
-                            item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), "Četvrtak");
-                            listItems.add(item);
-                        } else {
-                            item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), "Petak");
-                            listItems.add(item);
-                        }
                     }
                     adapter = new Adapter(listItems, getContext());
 
