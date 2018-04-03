@@ -98,10 +98,35 @@ public class TjedniMenuFragment extends Fragment {
                     Menu item;
                     for (int i = 0; i < array.length(); i++) {
                         JSONObject o = array.getJSONObject(i);
+                        String dan = "";
+                        switch (o.getString("Dan")){
+                            case "Monday":
+                                dan = "Ponedjeljak";
+                                break;
+                            case "Tuesday":
+                                dan = "Utorak";
+                                break;
+                            case "Wednesday":
+                                dan = "Srijeda";
+                                break;
+                            case "Thursday":
+                                dan = "Četvrtak";
+                                break;
+                            case "Friday":
+                                dan = "Petak";
+                                break;
+                            case "Saturday":
+                                dan = "Subota";
+                                break;
+                            case "Sunday":
+                                dan = "Nedjelja";
+                                break;
 
-                            item = new Menu(o.getString("Jelo"),
-                                    o.getString("Cijena"), o.getString("Dan"));
-                            listItems.add(item);
+                        }
+
+                        item = new Menu(o.getString("Jelo"),
+                                o.getString("Cijena"), dan);
+                        listItems.add(item);
 
                     }
                     adapter = new Adapter(listItems, getContext());

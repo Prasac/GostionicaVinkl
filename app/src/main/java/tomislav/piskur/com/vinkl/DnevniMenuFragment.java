@@ -44,7 +44,7 @@ public class DnevniMenuFragment extends Fragment {
     private TextView tvDnevniMenu;
     private Button btnHome;
     private ProgressBar spinner;
-    private static final String URL_DATA = "http://vinkl.somee.com/dnevniMenu";
+    private static final String URL_DATA = "http://vinkl.somee.com/tjednimenu";
 
     public DnevniMenuFragment() {
 
@@ -106,10 +106,11 @@ public class DnevniMenuFragment extends Fragment {
                 String dayOfTheWeek = sdf.format(d);
                 dayOfTheWeek = dayOfTheWeek.substring(0, 1).toUpperCase() + dayOfTheWeek.substring(1);
                 tvDnevniMenu.setText(dayOfTheWeek);
-
+                sdf = new SimpleDateFormat("EEEE", java.util.Locale.UK);
+                dayOfTheWeek = sdf.format(d);
                 try {
                     JSONObject jsonObject = new JSONObject(response);
-                    JSONArray array = jsonObject.getJSONArray("dnevniMenu");
+                    JSONArray array = jsonObject.getJSONArray("tjedniMenu");
 
                     for (int i = 0; i < array.length(); i++) {
 
@@ -117,8 +118,14 @@ public class DnevniMenuFragment extends Fragment {
 
                         Menu item = new Menu(
                                 o.getString("Jelo"), o.getString("Cijena"), "");
+                        if (o.getString("Dan").equals(dayOfTheWeek)){
+                            listItems.add(item);
+                        }
 
-                        listItems.add(item);
+
+
+
+
 
                     }
 
@@ -131,6 +138,7 @@ public class DnevniMenuFragment extends Fragment {
                         Toast.makeText(getContext(), "Poštovani, danas nema dnevnih jela.", Toast.LENGTH_LONG).show();
                         spinner.setVisibility(View.GONE);
                     }
+
 
 
                 } catch (JSONException e) {
